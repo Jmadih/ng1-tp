@@ -1,0 +1,19 @@
+footer.minimal {
+  position: absolute;
+  height: 25px;
+  bottom: 0;
+  width: 100%;
+
+  ul {
+    list-style: none;
+
+    li {
+      float: left;
+      margin: 3px;
+
+      &.break:after {
+        content: " |";
+      }
+    }
+  }
+}
