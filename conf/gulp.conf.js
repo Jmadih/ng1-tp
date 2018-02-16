@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 'use strict';
 
 /**
@@ -11,7 +12,7 @@
 const path = require('path');
 const gutil = require('gulp-util');
 
-exports.ngModule = 'app';
+exports.ngModule = 'ng1tp';
 
 /**
  *  The main paths of your project handle these with care
