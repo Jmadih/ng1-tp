@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('ng1tp.home-component')
+    .module('ng1tp.homecomponent')
     .component('homeComponent', {
       templateUrl: 'app/home-component/home.component.html',
       controller: HomeController,
