@@ -1,5 +1,5 @@
 describe('hello component', function () {
-  beforeEach(module('app', function ($provide) {
+  beforeEach(module('ng1tp', function ($provide) {
     $provide.factory('app', function () {
       return {
         templateUrl: 'app/home.component.html'
