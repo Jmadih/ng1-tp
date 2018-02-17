@@ -12,6 +12,11 @@
           templateUrl: 'app/home/home.html',
           controller: 'HomeController as homeCtrl'
         }
+      },
+      resolve: {
+        simple: function () {
+          return 'simple';
+        }
       }
     });
   }
