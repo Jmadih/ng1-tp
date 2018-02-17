@@ -5,8 +5,8 @@
     .module('ng1tp.participants')
     .component('participantsComponent', {
       bindings: {
-        participants: '<',
-        simple: '@'
+        simple: '@',
+        participants: '<'
       },
       templateUrl: 'app/participants/participants.html',
       controller: participantsController,
@@ -17,6 +17,7 @@
     var vm = this;
     this.$onInit = function () {
       $log.log(vm.simple);
+      $log.log(vm.participants);
     };
   }
 })();
