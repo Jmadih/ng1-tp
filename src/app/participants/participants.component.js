@@ -10,14 +10,14 @@
       },
       templateUrl: 'app/participants/participants.html',
       controller: participantsController,
-      controllerAs: 'participantCtrl'
+      controllerAs: 'participantsCtrl'
     });
 
-  function participantsController($log) {
+  function participantsController($log, participantsService) {
     var vm = this;
     this.$onInit = function () {
       $log.log(vm.simple);
-      $log.log(vm.participants);
+      $log.log(participantsService.getAll());
     };
   }
 })();

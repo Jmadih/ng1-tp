@@ -47,9 +47,13 @@
     "eslint-config-xo-space": "^0.15.0",
     "eslint-config-angular": "^0.5.0",
     "eslint-plugin-angular": "^1.6.1",
-    "gulp-eslint": "^3.0.1"
+    "gulp-eslint": "^3.0.1",
+    "express": "^4.16.2",
+    "underscore": "^1.8.3",
+    "cors": "^2.7.1"
   },
   "scripts": {
+    "start": "node _server/server.js",
     "build": "gulp",
     "serve": "gulp serve",
     "serve:dist": "gulp serve:dist",
@@ -70,5 +74,8 @@
     "extends": [
       "xo-space"
     ]
+  },
+  "dependencies": {
+    "http-proxy-middleware": "^0.17.4"
   }
 }
