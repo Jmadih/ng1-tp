@@ -25,8 +25,8 @@ app.use(function (req, res, next) {
  * Participants
  */
 app.get('/api/v1/participants', api.getParticipants);
-app.get('/api/v1/participants/:id', api.getParticipants);
-app.put('/api/v1/participants/:id', api.getParticipants);
+app.get('/api/v1/participants/:id', api.getParticipant);
+app.put('/api/v1/participants/:id', api.updateParticipant);
 
 app.listen(app.get('port'), function () {
   console.log('✔Express server listening on http://localhost:%d/', app.get('port'));

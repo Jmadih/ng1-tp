@@ -3,7 +3,10 @@
 
   angular
     .module('ng1tp.shared',
-    ['ui.router',
+    [
+      'ui.router',
+      'ngMessages',
       'ui.bootstrap',
-      'smart-table']);
+      'smart-table'
+    ]);
 })();

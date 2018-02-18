@@ -2,6 +2,7 @@
 
 exports.participants = [
   {
+    id: 1,
     firstName: 'Blandine',
     lastName: 'Faivre',
     birthDate: new Date('1987-04-25'),
@@ -10,6 +11,7 @@ exports.participants = [
     mood: 'SMILE'
   },
   {
+    id: 2,
     firstName: 'Laurent',
     lastName: 'Renard',
     birthDate: new Date('1987-04-25'),
@@ -18,6 +20,7 @@ exports.participants = [
     mood: 'MEH'
   },
   {
+    id: 3,
     firstName: 'Francoise',
     lastName: 'Duchess',
     birthDate: null,
@@ -26,6 +29,7 @@ exports.participants = [
     mood: 'FROWN'
   },
   {
+    id: 4,
     firstName: 'Luc',
     lastName: 'Pardeau',
     birthDate: new Date('1987-04-25'),
