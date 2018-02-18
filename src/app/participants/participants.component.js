@@ -15,6 +15,7 @@
 
   function participantsController($log, participantsService) {
     var vm = this;
+    vm.showAbsent = false;
     this.$onInit = function () {
       $log.log(vm.simple);
       participantsService.getAll().then(function (data) {

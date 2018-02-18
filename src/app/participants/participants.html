@@ -1,3 +1,7 @@
+
+<div uib-alert ng-class="'alert-success'">
+  <h2>Present :</h2>
+</div>
 <table st-table="participantsCtrl.participants" class="table table-striped">
   <thead>
   <tr>
@@ -5,6 +9,7 @@
     <th>last name</th>
     <th>birth date</th>
     <th>email</th>
+    <th>Mood</th>
     <th>Action</th>
   </tr>
   </thead>
@@ -15,9 +20,44 @@
     <td>{{participant.birthDate}}</td>
     <td>{{participant.email}}</td>
     <td>
+      <mood-directive type="{{participant.mood}}"></mood-directive>
+    </td>
+    <td>
       <button type="button" class="btn btn-primary">Edit</button>
       <button type="button" class="btn btn-danger">Delete</button>
     </td>
   </tr>
   </tbody>
 </table>
+
+<input type="checkbox" ng-model="participantsCtrl.showAbsent">Show absents list</input>
+<div ng-if="participantsCtrl.showAbsent" >
+  <div uib-alert ng-class="'alert-danger'">
+    <h2>Absent :</h2>
+  </div>
+  <table st-table="participantsCtrl.participants" class="table table-striped">
+    <thead>
+    <tr>
+      <th>first name</th>
+      <th>last name</th>
+      <th>birth date</th>
+      <th>email</th>
+      <th>Mood</th>
+      <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="participant in participantsCtrl.participants">
+      <td>{{participant.firstName}}</td>
+      <td>{{participant.lastName}}</td>
+      <td>{{participant.birthDate}}</td>
+      <td>{{participant.email}}</td>
+      <td> <mood-directive type="{{participant.mood}}"></mood-directive></td>
+      <td>
+        <button type="button" class="btn btn-primary">Edit</button>
+        <button type="button" class="btn btn-danger">Delete</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
