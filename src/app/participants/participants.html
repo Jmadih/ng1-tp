@@ -14,11 +14,11 @@
   </tr>
   </thead>
   <tbody>
-  <tr ng-repeat="participant in participantsCtrl.participants | filter:{ absent: false}">
+  <tr ng-repeat="participant in participantsCtrl.participants">
     <td>{{participant.firstName}}</td>
     <td>{{participant.lastName}}</td>
-    <td>{{participant.birthDate | undefined}}</td>
-    <td>{{participant.email | undefined}}</td>
+    <td>{{participant.birthDate}}</td>
+    <td>{{participant.email}}</td>
     <td>
       <mood-directive type="{{participant.mood}}"></mood-directive>
     </td>
@@ -47,11 +47,11 @@
     </tr>
     </thead>
     <tbody>
-    <tr ng-repeat="participant in participantsCtrl.participants | filter:{ absent: true}">
+    <tr ng-repeat="participant in participantsCtrl.participants">
       <td>{{participant.firstName}}</td>
       <td>{{participant.lastName}}</td>
-      <td>{{participant.birthDate | undefined}}</td>
-      <td>{{participant.email | undefined}}</td>
+      <td>{{participant.birthDate}}</td>
+      <td>{{participant.email}}</td>
       <td> <mood-directive type="{{participant.mood}}"></mood-directive></td>
       <td>
         <button type="button" class="btn btn-primary">Edit</button>
