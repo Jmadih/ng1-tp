@@ -17,7 +17,9 @@
     var vm = this;
     this.$onInit = function () {
       $log.log(vm.simple);
-      $log.log(participantsService.getAll());
+      participantsService.getAll().then(function (data) {
+        $log.log(data);
+      });
     };
   }
 })();
