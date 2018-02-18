@@ -20,7 +20,7 @@ exports.participants = [
   {
     firstName: 'Francoise',
     lastName: 'Duchess',
-    birthDate: new Date('1987-04-25'),
+    birthDate: null,
     email: 'raymondef@gmail.com',
     absent: true,
     mood: 'FROWN'
@@ -29,7 +29,7 @@ exports.participants = [
     firstName: 'Luc',
     lastName: 'Pardeau',
     birthDate: new Date('1987-04-25'),
-    email: 'lucp@gmail.com',
+    email: '',
     absent: false,
     mood: 'HANDPEACE'
   }
