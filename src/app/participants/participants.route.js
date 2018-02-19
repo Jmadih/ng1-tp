@@ -20,18 +20,6 @@
           return participantsService.getAll();
         }
       }
-    }).state('main.editParticipants', {
-      url: '/participants/edit/:id',
-      views: {
-        'content@layout': {
-          component: 'editParticipantsComponent'
-        }
-      },
-      resolve: {
-        participant: function (participantsService, $stateParams) {
-          return participantsService.getParticipant($stateParams.id);
-        }
-      }
     });
   }
 })();

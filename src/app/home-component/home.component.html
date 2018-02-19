@@ -1,2 +1,42 @@
 <h1>{{ homeCtrl.hello }}</h1>
 
+<div class="row">
+  <div class="col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-4 account-center-container">
+    <form class="form-horizontal account-form" >
+      <div class="form-group" ng-class="{'has-error': false}">
+        <label class="col-sm-4 col-xs-12 control-label">First name</label>
+        <div class="col-sm-7 col-xs-12">
+          <input class="form-control" id="firstname" type="text" name="firstname" autocomplete="off" auto-focus>
+        </div>
+      </div>
+      <div class="form-group" ng-class="{'has-error': false}">
+        <label for="lastname" class="col-sm-4 col-xs-12 control-label">Last name</label>
+        <div class="col-sm-7 col-xs-12">
+          <input class="form-control" id="lastname" type="text" name="lastname" autocomplete="off" auto-focus>
+        </div>
+      </div>
+      <div class="form-group" ng-class="{'has-error': false}">
+        <label for="email" class="col-sm-4 col-xs-12 control-label">Email</label>
+        <div class="col-sm-7 col-xs-12">
+          <input class="form-control" id="email" type="email" name="email" autocomplete="off" auto-focus>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="absent" class="col-sm-4 col-xs-12 control-label">Absent</label>
+        <div class="col-sm-7 col-xs-12">
+          <input class="form-control" id="absent" type="checkbox" name="absent" autocomplete="off" auto-focus>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-4 col-sm-7 col-xs-12">
+          <button class="btn btn-primary btn-block" type="submit">
+            Edit
+          </button>
+          <button class="btn btn-danger btn-block" type="submit">
+            Cancel
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
